@@ -5,7 +5,7 @@ btn2.addEventListener('click', agregarEmail2);
 
 function agregarEmail()  {
     const email = document.querySelector('#newsletter1');
-    console.log (email.value);
+  
     if (email.value != ''){
         alert('Se ha agregado '+email.value+' a la lista de novedades de los proyectos');  
     } else {
@@ -17,7 +17,7 @@ function agregarEmail()  {
 
 function agregarEmail2()  {
     const email = document.querySelector('#newsletter2');
-    console.log (email.value);
+   
     if (email.value != ''){
         alert('Se ha agregado '+email.value+' a la lista de novedades de los proyectos');  
     } else {

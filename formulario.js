@@ -1,5 +1,8 @@
-const btn = document.querySelector('[data-form-btn]');
+const btn = document.querySelector('#boton1');
 btn.addEventListener('click', agregarEmail)
+
+const btn2 = document.querySelector('#boton2');
+btn2.addEventListener('click', agregarEmail)
 
 function agregarEmail ()  {
     const email = document.querySelector('#newsletter1');

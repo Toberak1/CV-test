@@ -8,8 +8,12 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!-- FONT Abel -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="./estilo.css">
+    <!-- FONT Abel 
+  <link rel="preconnect" href="https://fonts.googleapis.com">-->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
   <title>CV - Random</title>
@@ -33,7 +37,7 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          
+
           <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Portfolio GitHub</a>
           </li>
@@ -42,7 +46,7 @@
     </div>
   </nav>
 
-  <section>
+  <section class="bloquePrincipal">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -55,57 +59,83 @@
             <li class="list-group-item"><b>Email:</b> ron.collins@example.com</li>
             <li class="list-group-item"><b>Ubicación:</b> Buenos Aires, Arentina </li>
             <li class="list-group-item"><b>Puesto actual:</b> Desarrollador Web Front-end </li>
-            <li class="list-group-item"><b>Ademas:</b> Game Designer y UxUi Designer en entrenamiento / Master en Discord / Fotógrafo conceptual</li>
+            <li class="list-group-item"><b>Ademas:</b> Game Designer y UxUi Designer en entrenamiento / Master en
+              Discord / Fotógrafo conceptual</li>
             <li class="list-group-item disabled">Ultima actualización feb 2023</li>
           </ul>
+          <form class="bloquePrincipal">
+            <h5>Dejame tu contacto</h5>
+            <p>Periodicamente enviaré novedades sobre mis proyectos.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email</label>
+              <input id="newsletter1" type='email' class="form-control" placeholder="tumail@ejemplo.com">
+              <button class="btn btn-primary" type="button" data-form-btn>Enviar</button>
+            </div>
+          </form>
+          <section class="skills" id="skills">
+            <h3 class="skill-header">Mis habilidades</h2>
+        
+            <div class="skills-wrapper">
+              <div class="first-set animate__animated animate__pulse">
+                <img src="./csshtmljs.png" alt=""  class="icon icon-card" />
+              </div>
+            </div>
+          </section>
         </div>
+              
         <div class="col-md-8">
           <h3>Acerca de mi</h3>
-          <p>Apasoniado por la tencnología, soy técnico en informática con mas de 15 años de experiencia ofreciendo un mantenimiento correctivo y preventivo en equipos y sistemas informáticos, siempre aplicando el conocimiento adquirido y combinándolo con el conocimiento autodidacta para refrescar mis habilidades y aprender de las nuevas tecnologías.</p>
+          <p>Apasoniado por la tencnología, soy técnico en informática con mas de 15 años de experiencia ofreciendo un
+            mantenimiento correctivo y preventivo en equipos y sistemas informáticos, siempre aplicando el conocimiento
+            adquirido y combinándolo con el conocimiento autodidacta para refrescar mis habilidades y aprender de las
+            nuevas tecnologías.</p>
           <h3>Más Sobre mí</h3>
-          <p>Actualmente mi enfoque esta en aprender las tecnologías mas usadas en el desarrollo web front-end llevando cursos en plataformas como Udemy, Coursera y el programa de Oracle y Alura-Latam: One Next Education. Así también divido mi jornada para aprender mucho más sobre Cloud Computing 💻.</p>
+          <p>Actualmente mi enfoque esta en aprender las tecnologías mas usadas en el desarrollo web front-end llevando
+            cursos en plataformas como Udemy, Coursera y el programa de Oracle y Alura-Latam: One Next Education. Así
+            también divido mi jornada para aprender mucho más sobre Cloud Computing 💻.</p>
           <p>Autodidacta en constante aprendizaje y al pendiente de las nuevas tecnologías.</p>
-          <p>En mis tiempos libres disfruto leer libros 📚 sobre el desarrollo personal y profesional, y también disfrutar de un buen partido de fútbol o una buena partida en un videojuego 🎮.</p>
+          <p>En mis tiempos libres disfruto leer libros 📚 sobre el desarrollo personal y profesional, y también
+            disfrutar de un buen partido de fútbol o una buena partida en un videojuego 🎮.</p>
+
             
-          
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
-            aria-expanded="false" aria-controls="collapseExample">
-            Estudios
-          </a>
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2"
-            aria-expanded="false" aria-controls="collapseExample2">
-            Experiencia
-          </button>
-          <div class="collapse" id="collapseExample3">
-            <div class="card card-body">
-              CONTACTO MEDIOS DE CONTACTO
+
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Estudios
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><ul>
+                  <li>Técnico en electrónica egresado/a del [nombre de la escuela técnica].</li>
+                  <li>Cursos avanzados en desarrollo de software en [nombre del instituto de formación técnica].</li>
+                  <li>Certificación en lenguajes de programación y desarrollo web por [nombre de la academia de tecnología].</li>
+                  <li>Programa de entrenamiento en programación y desarrollo de software en [nombre de la empresa de tecnología] durante [periodo de tiempo].</li>
+                </ul>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at nisl non felis laoreet dictum vel a
-              nulla. Aenean vitae finibus arcu. Maecenas mauris odio, ullamcorper non pretium id, vehicula ut tortor.
-              Mauris pulvinar ultrices felis, ut sodales justo efficitur nec. Duis vitae luctus velit. Mauris bibendum
-              semper maximus. Vestibulum vel congue orci, in consequat dui. Praesent ex orci, blandit et tincidunt
-              vitae, luctus a lorem. Cras finibus elit nec commodo volutpat. Vestibulum gravida vel felis sed ultricies.
-              Morbi volutpat dolor in placerat dapibus. Suspendisse nisi purus, tempor non leo et, placerat aliquam
-              elit. Nam ac lobortis mi, vitae dapibus risus. Aenean vel velit scelerisque, congue est vel, fringilla
-              ligula. Morbi quis blandit risus, eu consequat enim. Nulla finibus lobortis leo, id euismod orci lobortis
-              eget.
-            </div>
-          </div>
-          <div class="collapse" id="collapseExample2">
-            <div class="card card-body">
-              Sed egestas pulvinar ipsum id vulputate. In vel accumsan sapien, in eleifend augue. Sed tempus purus
-              libero, id ullamcorper lorem congue non. In dignissim odio et vehicula convallis. Integer in dui turpis.
-              Praesent vitae volutpat justo. Duis viverra nibh sed dolor sodales fermentum. Proin vehicula nunc nibh, id
-              pulvinar dui viverra ut. Ut rhoncus aliquam dolor eu dictum. Pellentesque et dolor tincidunt, sodales
-              metus ut, mattis ligula.
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Experiencias
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> Durante varios años trabajé como agente de atención al cliente en una compañía de servicios. Me encantaba ayudar a los clientes y solucionar sus problemas, pero siempre me intrigó el funcionamiento de la plataforma de la empresa. Así que, empecé a investigar por mi cuenta sobre el desarrollo web y la programación. Al poco tiempo, comencé a tomar cursos en línea y a trabajar en algunos proyectos personales. Descubrí que me apasionaba la tecnología y el desarrollo web, así que decidí hacer un cambio de carrera. Ahora, trabajo como desarrollador web en una empresa que me permite utilizar mis habilidades para crear soluciones tecnológicas y mejorar la experiencia del usuario.
+                </div>
+              </div>
             </div>
           </div>
 
-          
         </div>
+
       </div>
     </div>
   </section>
@@ -132,7 +162,7 @@
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Escritura</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Locaciones</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ventas</a></li>
-            
+
           </ul>
         </div>
 
@@ -162,7 +192,7 @@
 
       <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
         <p>&copy; 2023 Ronald, Todos los derechos reservados.</p>
-        
+
       </div>
     </footer>
   </div>
@@ -175,7 +205,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
   <script src="./formulario.js"></script>
-  </body>
+</body>
 
 </html>
